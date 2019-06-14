@@ -11,7 +11,7 @@ python run.py --agt 9 --usr 1 --max_turn 40 \
 	      --batch_size 16 \
 	      --goal_file_path ./deep_dialog/data/user_goals_first_turn_template.part.movie.v1.p \
 	      --warm_start 1 --warm_start_epochs 100 \
-	      --planning_steps 9 \
+	      --planning_steps 2 \
 	      --write_model_dir ./deep_dialog/checkpoints/DDQAgent \
 	      --torch_seed 100 \
 	      --grounded 0 \
