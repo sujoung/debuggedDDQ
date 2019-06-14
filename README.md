@@ -47,7 +47,8 @@ The model that I have trined is passed on that argument already in the `.bash` f
 * OSError: directory error on 'src/run.py'
 
 ## Future debugging plan
-* Confusion on prediction mode after second epochs when testing `agent_dqn.py`, `dialog_manager.py`
+* Confusion on prediction mode after second epoch when testing  
+problematic files: `agent_dqn.py`, `dialog_manager.py`  
 
 ## Reference
 
