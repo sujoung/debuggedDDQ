@@ -44,7 +44,7 @@ The model that I have trined is passed on that argument already in the `.bash` f
 
 ## Debugging
 * Array type confusion on epsilon greedy policy on `src/deep_dialog/agents/agent_dqn.py`
-* OSError: directory error on 'src/run.py'
+* OSError: directory error on `src/run.py` 
 
 ## Future debugging plan
 * Confusion on prediction mode after second epoch when testing  
