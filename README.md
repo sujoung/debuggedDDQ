@@ -14,7 +14,7 @@ If you don't have a conda, you can install it. It doesn't hurt you.
 2) Then
 `cd ddq`  
 `source activate ddq`  
-`git clone *repository_address*`  
+`git clone *The http address of this repository*`  
 `cd debuggedDDQ/src`  
 
 3) Install packages
@@ -23,18 +23,22 @@ When installing PyTorch, please use the command that is given on their [website]
 If you scroll down a bit, you can see QUICK START LOCALLY section.
 There you can select what kind of environment you have now then it will give you a command.
 
-4) When training, please modify the `train_k3.bash`.  
+4) If you want to do some training, please modify the `train_k3.bash`.  
 k3 means 3 planning steps.  
 You can put your desired number of planning step K-1 on this argument `--planning_steps` which is 2 now.  
 After adjustment you can run `bash train_k3.bash`. (You can rename the `.bash` file)  
 
 5) If You don't want to train, you can use my trained model which is trained on 500 epochs.  
 In that case, you can run `bash test_ddq_k5.bash`.  
-If you want to see 10 sample test dialogs, you can modify `--episodes` flag to 10.  
+If you want to see 10 sample test dialogs, you can modify `--episodes` flag to `10`.  
 Be aware the argument with the flag `--trained_model_path`.  
 This requires the `.p`(pickle) file of the last training epoch.  
 If you don't want to train a new model, you can just leave it as it is.  
 The model that I have trined is passed on that argument already in the `.bash` file  
+
+6) If you want to have a visualized learning curve, you can run :  
+`python draw_learning_curve.py --cmd 0 --result_file *RESULT JSON FILE*`
+The sample result file is on `debuggedDDQ/src/deep_dialog/checkpoints/DDQAgent/agt_9_performance_records.json`.
 
 ## Requirement
 * python 2.7 (conda environment is strongly recommended)  
