@@ -9,6 +9,7 @@ This document is a description of the modified version of DDQ which is originall
 ## How to run?
 1) First, make a virtualenv
 `conda create -n ddq python=2.7 anaconda`
+If you don't have a conda, you can install it. It doesn't hurt you.
 
 2) Then
 `cd ddq`  
