@@ -1,7 +1,8 @@
 # Deep Dyna-Q: Integrating Planning for Task-Completion Dialogue Policy Learning
 *An implementation of the  
 [Deep Dyna-Q: Integrating Planning for Task-Completion Dialogue Policy Learning](https://arxiv.org/abs/1801.06176)*
-https://github.com/MiuLab/DDQ
+
+[Github repository of original DDQ](https://github.com/MiuLab/DDQ)
 
 This document is a description of the modified version of DDQ which is originally from MiuLab
 
@@ -10,6 +11,13 @@ This document is a description of the modified version of DDQ which is originall
 * matplotlib  
 * h5py  
 * torch  
+
+## Debugging
+* Array type confusion on epsilon greedy policy on 'src/deep_dialog/agents/agent_dqn.py'
+* OSError: directory error on 'src/run.py'
+
+## Future debugging plan
+* Confusion on prediction mode after second epochs when testing 'agent_dqn.py', 'dialog_manager.py'
 
 ## Reference
 
